@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f4c802c282f06ed81a4cfeb457e7be0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f4c802c282f06ed81a4cfeb457e7be0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f4c802c282f06ed81a4cfeb457e7be0 = L.map(
+                "map_5f4c802c282f06ed81a4cfeb457e7be0",
+                {
+                    center: [51.22954310763889, 4.408255399305556],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d724f875b1ef6ddb0dccf4a7f74fbe6e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var marker_f2fba0c91826c6a56c64257979793f39 = L.marker(
+                [51.22963222222222, 4.4097172222222225],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_fd03e929aff079266df8f223ba6eb252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f2fba0c91826c6a56c64257979793f39.setIcon(icon_fd03e929aff079266df8f223ba6eb252);
+        
+    
+        var popup_1cc639b5b7d6394ec60590b3b1eb8851 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b24a35ec0adab115e7b65e4a94734552 = $(`<div id="html_b24a35ec0adab115e7b65e4a94734552" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 11<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> sloep<br><b>Geborgen:</b> nee<br><b>Latitude:</b> 51.229632<br><b>Longitude:</b> 4.409717</div>`)[0];
+            popup_1cc639b5b7d6394ec60590b3b1eb8851.setContent(html_b24a35ec0adab115e7b65e4a94734552);
+        
+
+        marker_f2fba0c91826c6a56c64257979793f39.bindPopup(popup_1cc639b5b7d6394ec60590b3b1eb8851)
+        ;
+
+        
+    
+    
+            marker_f2fba0c91826c6a56c64257979793f39.bindTooltip(
+                `<div>
+                     Nummer 11 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fd3dfe9196c47cbd4d86886383111db = L.marker(
+                [51.22958277777778, 4.408071666666667],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_c75c693841ed9092702932cc5cb5ed53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3fd3dfe9196c47cbd4d86886383111db.setIcon(icon_c75c693841ed9092702932cc5cb5ed53);
+        
+    
+        var popup_3fa49c0b28880d82626e5e96ebbfc761 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72b518981714860efddcbe8cd0ccae3c = $(`<div id="html_72b518981714860efddcbe8cd0ccae3c" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 19<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> stalen vlotter<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229583<br><b>Longitude:</b> 4.408072</div>`)[0];
+            popup_3fa49c0b28880d82626e5e96ebbfc761.setContent(html_72b518981714860efddcbe8cd0ccae3c);
+        
+
+        marker_3fd3dfe9196c47cbd4d86886383111db.bindPopup(popup_3fa49c0b28880d82626e5e96ebbfc761)
+        ;
+
+        
+    
+    
+            marker_3fd3dfe9196c47cbd4d86886383111db.bindTooltip(
+                `<div>
+                     Nummer 19 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a59962632ae38d027690eb570c54a10 = L.marker(
+                [51.22958277777778, 4.408071666666667],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_997177f1b366a83a54706e696c94777e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7a59962632ae38d027690eb570c54a10.setIcon(icon_997177f1b366a83a54706e696c94777e);
+        
+    
+        var popup_c70ed22c4e31a65e68555209b3d08267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ce85dbec6f6f9b3e34f420235f4798e = $(`<div id="html_7ce85dbec6f6f9b3e34f420235f4798e" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 19<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> stalen vlotter<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229583<br><b>Longitude:</b> 4.408072</div>`)[0];
+            popup_c70ed22c4e31a65e68555209b3d08267.setContent(html_7ce85dbec6f6f9b3e34f420235f4798e);
+        
+
+        marker_7a59962632ae38d027690eb570c54a10.bindPopup(popup_c70ed22c4e31a65e68555209b3d08267)
+        ;
+
+        
+    
+    
+            marker_7a59962632ae38d027690eb570c54a10.bindTooltip(
+                `<div>
+                     Nummer 19 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_969c93b59fb0bd95645f8129570893e8 = L.marker(
+                [51.229689444444446, 4.410160555555556],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_574b4bda645bca5583eee927255a6288 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_969c93b59fb0bd95645f8129570893e8.setIcon(icon_574b4bda645bca5583eee927255a6288);
+        
+    
+        var popup_c02b1f1dda03dcf89422c80dd3da1457 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a400f0e7ca77490d4cc807bde617edb = $(`<div id="html_0a400f0e7ca77490d4cc807bde617edb" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 34<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> gebogen ruber buis<br><b>Geborgen:</b> JA<br><b>Latitude:</b> 51.229689<br><b>Longitude:</b> 4.410161</div>`)[0];
+            popup_c02b1f1dda03dcf89422c80dd3da1457.setContent(html_0a400f0e7ca77490d4cc807bde617edb);
+        
+
+        marker_969c93b59fb0bd95645f8129570893e8.bindPopup(popup_c02b1f1dda03dcf89422c80dd3da1457)
+        ;
+
+        
+    
+    
+            marker_969c93b59fb0bd95645f8129570893e8.bindTooltip(
+                `<div>
+                     Nummer 34 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_495269b6b44a58254bcb785fb527d00a = L.marker(
+                [51.22961166666667, 4.409241944444445],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_249ee614593e0556dc4fe480294b2190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_495269b6b44a58254bcb785fb527d00a.setIcon(icon_249ee614593e0556dc4fe480294b2190);
+        
+    
+        var popup_4ea807256464e0b4acb6c754f11856f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c3c9ff3d2e8ae20f627ee92d944a57e = $(`<div id="html_8c3c9ff3d2e8ae20f627ee92d944a57e" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 39<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> spoel<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229612<br><b>Longitude:</b> 4.409242</div>`)[0];
+            popup_4ea807256464e0b4acb6c754f11856f5.setContent(html_8c3c9ff3d2e8ae20f627ee92d944a57e);
+        
+
+        marker_495269b6b44a58254bcb785fb527d00a.bindPopup(popup_4ea807256464e0b4acb6c754f11856f5)
+        ;
+
+        
+    
+    
+            marker_495269b6b44a58254bcb785fb527d00a.bindTooltip(
+                `<div>
+                     Nummer 39 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe6420065183666610d1ee6cf65c3fd8 = L.marker(
+                [51.22945888888889, 4.410284722222222],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_694cb409d8533e2bfddcc80142d77c28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fe6420065183666610d1ee6cf65c3fd8.setIcon(icon_694cb409d8533e2bfddcc80142d77c28);
+        
+    
+        var popup_0db8452c435ee8e377b18e68b1b043ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f26fdb3b3dcd5ea479afa5405f3a6c3 = $(`<div id="html_5f26fdb3b3dcd5ea479afa5405f3a6c3" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 41<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> buizen<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229459<br><b>Longitude:</b> 4.410285</div>`)[0];
+            popup_0db8452c435ee8e377b18e68b1b043ba.setContent(html_5f26fdb3b3dcd5ea479afa5405f3a6c3);
+        
+
+        marker_fe6420065183666610d1ee6cf65c3fd8.bindPopup(popup_0db8452c435ee8e377b18e68b1b043ba)
+        ;
+
+        
+    
+    
+            marker_fe6420065183666610d1ee6cf65c3fd8.bindTooltip(
+                `<div>
+                     Nummer 41 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b71e361b9509dd1a540278fd8e3db6a1 = L.marker(
+                [51.229599722222225, 4.4079258333333335],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_8eae23a39c9d91595ed7cc80061045c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b71e361b9509dd1a540278fd8e3db6a1.setIcon(icon_8eae23a39c9d91595ed7cc80061045c8);
+        
+    
+        var popup_ef30713a0f8b87f83e9304d41668d888 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_883d16501b18ed3a841a1b91f947b10e = $(`<div id="html_883d16501b18ed3a841a1b91f947b10e" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 45<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> buizen frame<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229600<br><b>Longitude:</b> 4.407926</div>`)[0];
+            popup_ef30713a0f8b87f83e9304d41668d888.setContent(html_883d16501b18ed3a841a1b91f947b10e);
+        
+
+        marker_b71e361b9509dd1a540278fd8e3db6a1.bindPopup(popup_ef30713a0f8b87f83e9304d41668d888)
+        ;
+
+        
+    
+    
+            marker_b71e361b9509dd1a540278fd8e3db6a1.bindTooltip(
+                `<div>
+                     Nummer 45 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ea72e37b2619727e09d307c36f2fa19 = L.marker(
+                [51.22960972222222, 4.408360277777778],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_e7f63602f03384d34b1a2292b79e3eb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5ea72e37b2619727e09d307c36f2fa19.setIcon(icon_e7f63602f03384d34b1a2292b79e3eb5);
+        
+    
+        var popup_fa8e4acb60850b2bd9fa6fce9f5b128c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7d76fe1a7ae5282b5d9b868c63ef545 = $(`<div id="html_c7d76fe1a7ae5282b5d9b868c63ef545" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 53<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> niets waargenomen<br><b>Geborgen:</b> nee<br><b>Latitude:</b> 51.229610<br><b>Longitude:</b> 4.408360</div>`)[0];
+            popup_fa8e4acb60850b2bd9fa6fce9f5b128c.setContent(html_c7d76fe1a7ae5282b5d9b868c63ef545);
+        
+
+        marker_5ea72e37b2619727e09d307c36f2fa19.bindPopup(popup_fa8e4acb60850b2bd9fa6fce9f5b128c)
+        ;
+
+        
+    
+    
+            marker_5ea72e37b2619727e09d307c36f2fa19.bindTooltip(
+                `<div>
+                     Nummer 53 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a3ae4b01732050c3e11ed4f78b8998a = L.marker(
+                [51.22960055555556, 4.408918333333333],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_cba07096a7725eeacf190b47ce08384f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0a3ae4b01732050c3e11ed4f78b8998a.setIcon(icon_cba07096a7725eeacf190b47ce08384f);
+        
+    
+        var popup_b47f1c3d6a33f7b8d4258e363192b690 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d618d98d3e69a5ae2bb452ad052c0c6 = $(`<div id="html_9d618d98d3e69a5ae2bb452ad052c0c6" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 57<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> buis<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229601<br><b>Longitude:</b> 4.408918</div>`)[0];
+            popup_b47f1c3d6a33f7b8d4258e363192b690.setContent(html_9d618d98d3e69a5ae2bb452ad052c0c6);
+        
+
+        marker_0a3ae4b01732050c3e11ed4f78b8998a.bindPopup(popup_b47f1c3d6a33f7b8d4258e363192b690)
+        ;
+
+        
+    
+    
+            marker_0a3ae4b01732050c3e11ed4f78b8998a.bindTooltip(
+                `<div>
+                     Nummer 57 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ebcd5bbf00fc5f8b4689195be128fec = L.marker(
+                [51.229348611111114, 4.408495833333333],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_90c5448a2133317208b7c9d10ca442c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ebcd5bbf00fc5f8b4689195be128fec.setIcon(icon_90c5448a2133317208b7c9d10ca442c5);
+        
+    
+        var popup_5d279365b048bda28861a465b6ca7ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad1708890117168c98151a10f0f2e6fd = $(`<div id="html_ad1708890117168c98151a10f0f2e6fd" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 78<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> buis<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229349<br><b>Longitude:</b> 4.408496</div>`)[0];
+            popup_5d279365b048bda28861a465b6ca7ec0.setContent(html_ad1708890117168c98151a10f0f2e6fd);
+        
+
+        marker_3ebcd5bbf00fc5f8b4689195be128fec.bindPopup(popup_5d279365b048bda28861a465b6ca7ec0)
+        ;
+
+        
+    
+    
+            marker_3ebcd5bbf00fc5f8b4689195be128fec.bindTooltip(
+                `<div>
+                     Nummer 78 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6748750bbf8aa367cccf9c4e09d3def9 = L.marker(
+                [51.229599722222225, 4.408805],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_c4c3a2b5383b917ae3a51d70f4b73fa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6748750bbf8aa367cccf9c4e09d3def9.setIcon(icon_c4c3a2b5383b917ae3a51d70f4b73fa3);
+        
+    
+        var popup_46f90713b830709dc78e4c4608f2c431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91a73b99dcf4c52b527311c5db1bb3a3 = $(`<div id="html_91a73b99dcf4c52b527311c5db1bb3a3" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 82<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> staalen bak<br><b>Geborgen:</b> nee<br><b>Latitude:</b> 51.229600<br><b>Longitude:</b> 4.408805</div>`)[0];
+            popup_46f90713b830709dc78e4c4608f2c431.setContent(html_91a73b99dcf4c52b527311c5db1bb3a3);
+        
+
+        marker_6748750bbf8aa367cccf9c4e09d3def9.bindPopup(popup_46f90713b830709dc78e4c4608f2c431)
+        ;
+
+        
+    
+    
+            marker_6748750bbf8aa367cccf9c4e09d3def9.bindTooltip(
+                `<div>
+                     Nummer 82 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef568c7c164f3550fd08a7e9dcc3ff07 = L.marker(
+                [51.2294025, 4.408280833333333],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_82338f1757b59d45eb3d680f1a8309a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef568c7c164f3550fd08a7e9dcc3ff07.setIcon(icon_82338f1757b59d45eb3d680f1a8309a2);
+        
+    
+        var popup_0a521ae4f30a7936ed5a1759f770f64d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_825483ffdef25ae67033eb95ede71c18 = $(`<div id="html_825483ffdef25ae67033eb95ede71c18" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 85<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> buis<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229402<br><b>Longitude:</b> 4.408281</div>`)[0];
+            popup_0a521ae4f30a7936ed5a1759f770f64d.setContent(html_825483ffdef25ae67033eb95ede71c18);
+        
+
+        marker_ef568c7c164f3550fd08a7e9dcc3ff07.bindPopup(popup_0a521ae4f30a7936ed5a1759f770f64d)
+        ;
+
+        
+    
+    
+            marker_ef568c7c164f3550fd08a7e9dcc3ff07.bindTooltip(
+                `<div>
+                     Nummer 85 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90c44841f0a17f0d42cdb466c1513636 = L.marker(
+                [51.22964861111112, 4.405911944444445],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_9e216ac12aed5ce3a3339c00623a24d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90c44841f0a17f0d42cdb466c1513636.setIcon(icon_9e216ac12aed5ce3a3339c00623a24d2);
+        
+    
+        var popup_2aa73bec7a07de6ba39cecf698102117 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3690cd80e1addc57a808617c71aa6f9 = $(`<div id="html_e3690cd80e1addc57a808617c71aa6f9" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 103<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> fiets berg<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229649<br><b>Longitude:</b> 4.405912</div>`)[0];
+            popup_2aa73bec7a07de6ba39cecf698102117.setContent(html_e3690cd80e1addc57a808617c71aa6f9);
+        
+
+        marker_90c44841f0a17f0d42cdb466c1513636.bindPopup(popup_2aa73bec7a07de6ba39cecf698102117)
+        ;
+
+        
+    
+    
+            marker_90c44841f0a17f0d42cdb466c1513636.bindTooltip(
+                `<div>
+                     Nummer 103 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9334af270670605f04fefa57a344b0bc = L.marker(
+                [51.229640555555555, 4.405828055555556],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_1713048d0a7603cc3a69e49c23dcd83f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9334af270670605f04fefa57a344b0bc.setIcon(icon_1713048d0a7603cc3a69e49c23dcd83f);
+        
+    
+        var popup_469b09f8f426dbdd87161a47e43a3ead = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47c753ab1636cb745574e6844f287cfd = $(`<div id="html_47c753ab1636cb745574e6844f287cfd" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 104<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> stenen<br><b>Geborgen:</b> nee<br><b>Latitude:</b> 51.229641<br><b>Longitude:</b> 4.405828</div>`)[0];
+            popup_469b09f8f426dbdd87161a47e43a3ead.setContent(html_47c753ab1636cb745574e6844f287cfd);
+        
+
+        marker_9334af270670605f04fefa57a344b0bc.bindPopup(popup_469b09f8f426dbdd87161a47e43a3ead)
+        ;
+
+        
+    
+    
+            marker_9334af270670605f04fefa57a344b0bc.bindTooltip(
+                `<div>
+                     Nummer 104 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afffd705e6907a2140869feb4300f5ed = L.marker(
+                [51.229079444444444, 4.408183611111111],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_c804ba4005ca55851b171112dda06e3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_afffd705e6907a2140869feb4300f5ed.setIcon(icon_c804ba4005ca55851b171112dda06e3b);
+        
+    
+        var popup_5d5f5caefd7703581e6df1ab8bb88adb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc0f960463512523a644870f8fe84615 = $(`<div id="html_fc0f960463512523a644870f8fe84615" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 122<br><b>Prioriteit:</b> Middel<br><b>Gedetecteerd:</b> sloep<br><b>Geborgen:</b> ja<br><b>Latitude:</b> 51.229079<br><b>Longitude:</b> 4.408184</div>`)[0];
+            popup_5d5f5caefd7703581e6df1ab8bb88adb.setContent(html_fc0f960463512523a644870f8fe84615);
+        
+
+        marker_afffd705e6907a2140869feb4300f5ed.bindPopup(popup_5d5f5caefd7703581e6df1ab8bb88adb)
+        ;
+
+        
+    
+    
+            marker_afffd705e6907a2140869feb4300f5ed.bindTooltip(
+                `<div>
+                     Nummer 122 (Prioriteit: Middel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a783622dffbb8e597640829219ecdfc = L.marker(
+                [51.2296025, 4.405828888888889],
+                {}
+            ).addTo(map_5f4c802c282f06ed81a4cfeb457e7be0);
+        
+    
+            var icon_cc9ee248c043b86762ce1c399430ba64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a783622dffbb8e597640829219ecdfc.setIcon(icon_cc9ee248c043b86762ce1c399430ba64);
+        
+    
+        var popup_cc9b5d61b4a4951dc9e263f1b553268e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e43ccf4f0d9ae6eacfee70120bcf412b = $(`<div id="html_e43ccf4f0d9ae6eacfee70120bcf412b" style="width: 100.0%; height: 100.0%;"><b>Nummer:</b> 123<br><b>Prioriteit:</b> Hoog<br><b>Gedetecteerd:</b> stenen<br><b>Geborgen:</b> nee<br><b>Latitude:</b> 51.229602<br><b>Longitude:</b> 4.405829</div>`)[0];
+            popup_cc9b5d61b4a4951dc9e263f1b553268e.setContent(html_e43ccf4f0d9ae6eacfee70120bcf412b);
+        
+
+        marker_1a783622dffbb8e597640829219ecdfc.bindPopup(popup_cc9b5d61b4a4951dc9e263f1b553268e)
+        ;
+
+        
+    
+    
+            marker_1a783622dffbb8e597640829219ecdfc.bindTooltip(
+                `<div>
+                     Nummer 123 (Prioriteit: Hoog)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
